@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" type="text/css" href="Style/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Resource/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Inicia Sesión</h2>
+        <input type="text" class="form-control" id="usuario" placeholder="Ingresa Usuario" required>
+        <input type="password" class="form-control" id="contraseña" placeholder="Ingresa Contraseña" required>
+        <button type="submit" id="login_btn">Entrar</button>
+        <div>
+            <br>
+            <a href="Templates/register_user.html">Registrate Aqui</a>
+        </div>
+    </div>
+    
+
+    <script type="module" src="Controllers/autentication.js"></script>
+
+    <script>
+        // Función para limpiar los valores de los campos de entrada
+        function limpiarCampos() {
+            document.getElementById('usuario').value = ''; // Limpiar el campo de usuario
+            document.getElementById('password').value = ''; // Limpiar el campo de contraseña
+        }
+    
+        // Llamar a la función para limpiar los campos cuando se cargue la página
+        document.addEventListener('DOMContentLoaded', function() {
+            limpiarCampos();
+        });
+    </script>
+</body>
+
+</html>
