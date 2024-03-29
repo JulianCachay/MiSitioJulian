@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" type="text/css" href="../Style/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('../Resource/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Registrarse</h2>
+        <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico" required>
+        <input type="email" class="form-control" id="confirmar_correo" placeholder="Confirmar Correo Electrónico"
+            required>
+        <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" required>
+        <input type="password" class="form-control" id="confirmar_contraseña" placeholder="Confirmar Contraseña"
+            required>
+        <div id="error" style="color: rgb(83, 14, 52);"></div>
+        <br>
+        <button type="submit" class="btn" id="registro_btn">Registrarse</button>
+        <div>
+            <br>
+            <a href="../index.html">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+        </div>
+    </div>
+
+    <!-- Carga inicial del script con el valor de v igual a "false" -->
+    <script type="module" id="registrationScript" src="../Controllers/registro.js"></script>
+
+    
+
+
+</body>
+
+</html>

@@ -7,7 +7,8 @@ import {
     getAuth,
     signInWithEmailAndPassword,
     signOut,
-    onAuthStateChanged
+    onAuthStateChanged,
+    createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
 const firebaseConfig = {
@@ -43,4 +44,8 @@ export const userState = () => {
 //metodo de autenticacion de usuario
 export const login_auth = (email, password) =>
     signInWithEmailAndPassword(auth, email, password)
+
+//registro
+export const registerauth = (email, password) =>
+    createUserWithEmailAndPassword(auth, email, password)
 
