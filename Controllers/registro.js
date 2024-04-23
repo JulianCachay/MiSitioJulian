@@ -60,9 +60,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const facbtn = document.getElementById("facebook_reg");
+const facbt = document.getElementById("facebook_reg");
 
-facbtn.addEventListener('click', async () => {
+facbt.addEventListener('click', async () => {
     try {
         const result = await popup_facebook();
         const user = result.user;
@@ -74,9 +74,9 @@ facbtn.addEventListener('click', async () => {
 });
 
 
-const googleBtn = document.getElementById("google_reg");
+const googleBt = document.getElementById("google_reg");
 
-googleBtn.addEventListener('click', async () => {
+googleBt.addEventListener('click', async () => {
     try {
         const result = await popup_google();
         const user = result.user;
