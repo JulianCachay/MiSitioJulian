@@ -1,4 +1,4 @@
-import { login_auth } from "../Controllers/firebase.js";
+import { login_auth, popup_facebook, popup_google } from "../Controllers/firebase.js";
 
 const clika = document.getElementById("login_btn");
 
@@ -30,3 +30,31 @@ async function validar() {
 window.addEventListener('DOMContentLoaded', () => {
     clika.addEventListener('click', validar);
 });
+
+const facbtn = document.getElementById("facebook_log");
+
+facbtn.addEventListener('click', async () => {
+    try {
+        const result = await popup_facebook();
+        alert('Authentication successful: '); 
+        window.location.href = '/templates/pagina.html';
+    } catch (error) {
+        alert('Error: authentication unsuccessful');
+        console.log('Session not validated');
+    }
+});
+
+
+const googleBtn = document.getElementById("google_log");
+
+googleBtn.addEventListener('click', async () => {
+    try {
+        const result = await popup_google();
+        const user = result.user;
+        alert('Autenticado' + user.email); 
+        window.location.href = '../Templates/home.html';
+    } catch (error) {
+        alert('Error, prueba mas tarde');
+    }
+});
+
