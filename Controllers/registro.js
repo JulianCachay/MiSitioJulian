@@ -1,4 +1,4 @@
-import { registerauth } from "../Controllers/firebase.js"
+import { registerauth, popup_facebook, popup_google } from "../Controllers/firebase.js"
 
 const registrar = document.getElementById('registro_btn')
 
@@ -58,3 +58,32 @@ async function register() {
 window.addEventListener('DOMContentLoaded', () => {
     registrar.addEventListener('click', register);
 });
+
+
+const facbtn = document.getElementById("facebook_reg");
+
+facbtn.addEventListener('click', async () => {
+    try {
+        const result = await popup_facebook();
+        const user = result.user;
+        alert('Autenticado' + user.email);
+        window.location.href = 'Templates/home.html';
+    } catch (error) {
+        alert('Error, prueba mas tarde');
+    }
+});
+
+
+const googleBtn = document.getElementById("google_reg");
+
+googleBtn.addEventListener('click', async () => {
+    try {
+        const result = await popup_google();
+        const user = result.user;
+        alert('Autenticado' + user.email);
+        window.location.href = "../Templates/home.html";
+    } catch (error) {
+        alert('Error, prueba mas tarde');
+    }
+});
+
