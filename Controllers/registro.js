@@ -1,4 +1,4 @@
-import { registerauth, popup_facebook, popup_google } from "../Controllers/firebase.js"
+import { registerauth, popup_facebook, popup_google, verificarCorreo } from "../Controllers/firebase.js"
 
 const registrar = document.getElementById('registro_btn')
 
@@ -42,6 +42,7 @@ async function register() {
 
         const validar = registerauth(email, contraseca)
         const verificar = await validar
+        await verificarCorreo(email)
 
             .then((verificar) => {
                 alert("El usuario se registro")

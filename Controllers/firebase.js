@@ -80,9 +80,9 @@ export const verificarCorreo = (email) =>
         })
 //borrar
 export const borrar_account = () => {
-    const user = firebase.auth().currentUser;
-    if (user) {
-        return deleteUser(user);
+    const usere = firebase.auth().currentUser;
+    if (usere) {
+        return deleteUser(usere);
     } else {
         return Promise.reject(new Error('Usuario no autenticado'));
     }
