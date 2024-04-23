@@ -30,6 +30,6 @@ btn_borrar_cuenta.addEventListener('click', async () => {
         alert("Cuenta borrada. Adios")
         window.location.href = '../index.html'
     } catch (error) {
-        alert('Algo salio mal, parece que te quedas un poco mas.');
+        alert('Algo salio mal, parece que te quedas un poco mas. (==' + error.message);
     }
 });
