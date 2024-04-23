@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', async() =>{
     sesion.addEventListener('click', cerrarSesion)
 })
 
-const btn_borrar_cuenta = document.getElementById("borrar_cuenta_btn")
+const btn_borrar_cuenta = document.getElementById("borrar_cuenta_bt")
 
 btn_borrar_cuenta.addEventListener('click', async () => {
     try {
