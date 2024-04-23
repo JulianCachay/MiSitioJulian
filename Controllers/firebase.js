@@ -67,7 +67,7 @@ export const popup_facebook = () =>
 
 //enviar correo verificacion registro
 const actionCodeSettings = {
-    url: 'https://andresabril2005.github.io/ApiParaNube/index.html',
+    url: 'https://juliancachay.github.io/MiSitioJulian/index.html',
     handleCodeInApp: true
 }
 export const verificarCorreo = (email) =>
