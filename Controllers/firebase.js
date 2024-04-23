@@ -81,7 +81,7 @@ export const verificarCorreo = (email) =>
 //borrar
 
 export const borrar_account = () =>
-    deleteUser(user)
+    deleteUser(user.currentUser)
 //registro
 export const registerMail = (email, password) =>
     createUserWithEmailAndPassword(auth, email, password)
