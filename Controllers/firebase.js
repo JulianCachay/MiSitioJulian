@@ -18,14 +18,14 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCF1CUE1e_uoP0XhnvifInOiHs1f-rMJJs",
-    authDomain: "apiwebmario.firebaseapp.com",
-    projectId: "apiwebmario",
-    storageBucket: "apiwebmario.appspot.com",
-    messagingSenderId: "377429199130",
-    appId: "1:377429199130:web:98e9dbb2faaec11a51c4a3",
-    measurementId: "G-NJKJND0HXW"
-};
+    apiKey: "AIzaSyCoCBQXRs7JrndA7ofslPUF1ycYdaUBsFo",
+    authDomain: "login-b2ae0.firebaseapp.com",
+    projectId: "login-b2ae0",
+    storageBucket: "login-b2ae0.appspot.com",
+    messagingSenderId: "695389052915",
+    appId: "1:695389052915:web:7289a81e29b73298547c86",
+    measurementId: "G-W1Q3LXCS9T"
+  };
 
 // Initialize
 const app = initializeApp(firebaseConfig);
