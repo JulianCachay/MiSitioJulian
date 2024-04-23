@@ -1,4 +1,4 @@
-import { recovery } from "Controllers/firebase.js"
+import { recovery } from "/Controllers/firebase.js"
 
 const event = document.getElementById("recover_btn")
 
