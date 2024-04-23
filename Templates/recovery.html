@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" type="text/css" href="../Style/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('../Resource/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="recover-container">
+        <h2>Registrarse</h2>
+        <input type="emailRe" class="form-control" id="correo" placeholder="Correo Electrónico" required>
+        <div id="errorRe" style="color: rgb(146, 8, 8);"></div>
+        <br>
+        <button type="submit" class="btn" id="recover_btn">Reestablecer</button>
+        <div>
+            <br>
+            <a href="../index.html">Volver a iniciar sesion</a>
+        </div>
+    </div>
+
+    <script type="module" id="registrationScript" src="../Controllers/recover.js"></script>
+
+    <footer>
+        <p><a href="https://www.freepik.es/foto-gratis/arbol-solitario_17247798.htm#fromView=search&page=1&position=2&uuid=0f8f0d93-12b1-47a5-a617-3e1d100bf933">Imagen
+                de wirestock en Freepik</a></p>
+    </footer>
+</body>
+
+</html>

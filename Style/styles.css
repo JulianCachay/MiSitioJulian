@@ -7,6 +7,15 @@
     width: 100%;
     text-align: center;
 }
+.recover-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
 
 .login-container h2 {
     margin-bottom: 30px;
