@@ -52,7 +52,7 @@ googleBtn.addEventListener('click', async () => {
         const result = await popup_google();
         const user = result.user;
         alert('Autenticado' + user.email); 
-        window.location.href = 'Templates/home.html';
+        window.location.href = "../Templates/home.html";
     } catch (error) {
         alert('Error, prueba mas tarde');
     }
