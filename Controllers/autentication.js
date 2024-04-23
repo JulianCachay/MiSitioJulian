@@ -36,11 +36,11 @@ const facbtn = document.getElementById("facebook_log");
 facbtn.addEventListener('click', async () => {
     try {
         const result = await popup_facebook();
-        alert('Authentication successful: '); 
-        window.location.href = '/templates/pagina.html';
+        const user = result.user;
+        alert('Autenticado' + user.email); 
+        window.location.href = '../Templates/home.html';
     } catch (error) {
-        alert('Error: authentication unsuccessful');
-        console.log('Session not validated');
+        alert('Error, prueba mas tarde');
     }
 });
 
