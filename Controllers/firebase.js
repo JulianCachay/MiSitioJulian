@@ -36,7 +36,7 @@ const user = auth.currentUser;
 
 const provider = new GoogleAuthProvider();
 
-export const signInWithGoogle = () => signInWithPopup(auth, provider);
+export const popup_google = () => signInWithPopup(auth, provider);
 
 //cerrar sesion
 export const log_out = () =>
