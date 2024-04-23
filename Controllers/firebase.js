@@ -80,7 +80,7 @@ export const verificarCorreo = (email) =>
         })
 //borrar
 export const borrar_account = () => {
-    const usere = firebase.auth().currentUser;
+    const usere = getAuth(app).currentUser;
     if (usere) {
         return deleteUser(usere);
     } else {
