@@ -26,6 +26,8 @@ async function register() {
     }
     else if (contraseña !== contraseñaConfirm) {
         error += "Las contraseñas no coinciden.<br>";
+    } else if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[A-Za-z!@#$%^&*()_+]{8,}/.test(contraseña)) {
+        errorContra += "La contraseña debe contener al menos una mayúscula, una minúscula y un caracter especial.<br>";
     }
 
 
