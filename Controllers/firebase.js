@@ -79,9 +79,15 @@ export const verificarCorreo = (email) =>
             alert("Error al enviar el correo de verificación: " + error)
         })
 //borrar
+export const borrar_account = () => {
+    const user = firebase.auth().currentUser;
+    if (user) {
+        return deleteUser(user);
+    } else {
+        return Promise.reject(new Error('Usuario no autenticado'));
+    }
+};
 
-export const borrar_account = () =>
-    deleteUser(user.currentUser)
 //registro
 export const registerMail = (email, password) =>
     createUserWithEmailAndPassword(auth, email, password)
