@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,16 @@
     <h1>Dashboard del Administrador</h1>
     <div>
         <h2>Agregar Carro</h2>
-        <form id="add-car-form">
-            <input type="text" id="make" placeholder="Marca" required>
-            <input type="text" id="model" placeholder="Modelo" required>
-            <input type="number" id="year" placeholder="Año" required>
+        <form id="formulario-agregar-carro">
+            <input type="text" id="marca" placeholder="Marca" required>
+            <input type="text" id="modelo" placeholder="Modelo" required>
+            <input type="number" id="año" placeholder="Año" required>
             <button type="submit">Agregar</button>
         </form>
     </div>
     <div>
         <h2>Lista de Carros</h2>
-        <ul id="car-list"></ul>
+        <ul id="lista-carros"></ul>
     </div>
     <script src="js/crud.js"></script>
 </body>
