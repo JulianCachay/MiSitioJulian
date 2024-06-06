@@ -38,7 +38,7 @@ import {
 
 //storage
 import { 
-    getStorage
+    
  } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js";
 
  const firebaseConfig = {
