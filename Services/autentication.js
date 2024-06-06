@@ -21,7 +21,7 @@ async function validar() {
     
             if (verification != null) {
                 alert("Usuario autenticado: " + email);
-                window.location.href = "Templates/home.html";
+                window.location.href = "Templates/home_admin.html";
             } else {
                 console.log("Sesión " + email + " no validada");
                 alert("Error de usuario, verifique usuario y/o contraseña.");
