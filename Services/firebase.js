@@ -15,6 +15,14 @@ import {
     deleteUser
 } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
+//firebase storage
+import {
+    getStorage,
+    ref,
+    uploadBytes,
+    getDownloadURL
+  } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js"
+
 //firestore
 import {
     getFirestore,
@@ -56,6 +64,9 @@ const providerFacebook = new FacebookAuthProvider();
 
 //-----------------------------------------------------------------------------------------
 //Metodos autenticacion firebase
+
+const storage = getStorage()
+
 
 // Iniciando con Facebook
 export const popup_facebook = () =>
@@ -211,5 +222,18 @@ export const updateUserInfo = (doce, updateData) => {
 export const deleteDataUser = (idDoc) =>
     deleteDoc(doc(db, "users", idDoc))
 
-
+export const addImgProductoStorage = (file, randomName) => {
+    const productoRef = ref(storage, 'imagenes/' + randomName)
+    return uploadBytes(productoRef, file).then((snapshot) => {
+      return getDownloadURL(snapshot.ref)
+    })
+  }
+export const addProducto = (t, d, p, c, i) =>
+    addDoc(collection(db, "productos"), {
+      titulo: t,
+      descripcion: d,
+      precio: p,
+      cantidad: c,
+      imagen: i
+    })
 
