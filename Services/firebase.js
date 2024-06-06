@@ -47,7 +47,7 @@ import {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-const storage = getStorage(app);
+
 const user = auth.currentUser;
 export const db = getFirestore(app);
 
