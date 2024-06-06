@@ -11,11 +11,7 @@ async function validar() {
         alert("Debe llenar los campos de usuario y el de contraseña.");
         return;
     }
-    if (email === "administrador@admin.com" && password === "12345678") {
-        alert("Bienvenido Administrador");
-        window.location.href = "Templates/home_admin.html";
-        return
-    }else{
+    
         try {
             const verification = await login_auth(email, password);
     
@@ -30,7 +26,7 @@ async function validar() {
             console.error("Error al autenticar:", error);
             alert("Error de usuario, verifique usuario y/o contraseña.");
         }
-    }
+    
 
     
 }
