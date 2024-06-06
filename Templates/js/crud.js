@@ -12,7 +12,7 @@ async function cargar() {
 
     ver.innerHTML += `
         <tr>
-        <th scope = "row">${doc.data().codigo})</th>
+        
         <td>${doc.data().modelo}</td>
         <td>${doc.data().motor}</td>
         <td>${doc.data().precio}</td>
