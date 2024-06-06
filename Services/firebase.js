@@ -220,13 +220,4 @@ export const deleteDataUser = (idDoc) =>
 const storagRef = ref(storage);
 
 //
-const firebaseConfig = {
-    apiKey: "AIzaSyCoCBQXRs7JrndA7ofslPUF1ycYdaUBsFo",
-    authDomain: "login-b2ae0.firebaseapp.com",
-    databaseURL: "https://login-b2ae0-default-rtdb.firebaseio.com",
-    projectId: "login-b2ae0",
-    storageBucket: "login-b2ae0.appspot.com",
-    messagingSenderId: "695389052915",
-    appId: "1:695389052915:web:7289a81e29b73298547c86",
-    measurementId: "G-W1Q3LXCS9T"
-  };
+
