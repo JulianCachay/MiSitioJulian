@@ -1,5 +1,5 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 //auth
 import {
@@ -34,15 +34,16 @@ import {
     getStorage
  } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyChViHU9-o0bPiKxVrakSgrrGUBrcBs39M",
-    authDomain: "apiweb-a6b44.firebaseapp.com",
-    projectId: "apiweb-a6b44",
-    storageBucket: "apiweb-a6b44.appspot.com",
-    messagingSenderId: "922422199542",
-    appId: "1:922422199542:web:5af8c0fac93108818398d7",
-    measurementId: "G-DW5CM9575Y"
-};
+ const firebaseConfig = {
+    apiKey: "AIzaSyCoCBQXRs7JrndA7ofslPUF1ycYdaUBsFo",
+    authDomain: "login-b2ae0.firebaseapp.com",
+    databaseURL: "https://login-b2ae0-default-rtdb.firebaseio.com",
+    projectId: "login-b2ae0",
+    storageBucket: "login-b2ae0.appspot.com",
+    messagingSenderId: "695389052915",
+    appId: "1:695389052915:web:7289a81e29b73298547c86",
+    measurementId: "G-W1Q3LXCS9T"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -217,3 +218,15 @@ export const deleteDataUser = (idDoc) =>
 
 //unidad de almacenamiento storage
 const storagRef = ref(storage);
+
+//
+const firebaseConfig = {
+    apiKey: "AIzaSyCoCBQXRs7JrndA7ofslPUF1ycYdaUBsFo",
+    authDomain: "login-b2ae0.firebaseapp.com",
+    databaseURL: "https://login-b2ae0-default-rtdb.firebaseio.com",
+    projectId: "login-b2ae0",
+    storageBucket: "login-b2ae0.appspot.com",
+    messagingSenderId: "695389052915",
+    appId: "1:695389052915:web:7289a81e29b73298547c86",
+    measurementId: "G-W1Q3LXCS9T"
+  };
