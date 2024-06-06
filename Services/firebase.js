@@ -21,7 +21,7 @@ import {
     ref,
     uploadBytes,
     getDownloadURL
-  } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js"
+  } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js"
 
 //firestore
 import {
@@ -38,7 +38,7 @@ import {
 
 //storage
 import { 
-    
+    getStorage
  } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js";
 
  const firebaseConfig = {
@@ -65,7 +65,7 @@ const providerFacebook = new FacebookAuthProvider();
 //-----------------------------------------------------------------------------------------
 //Metodos autenticacion firebase
 
-const storage = getStorage()
+const storage = getStorage(app)
 
 
 // Iniciando con Facebook
@@ -228,7 +228,7 @@ export const addImgProductoStorage = (file, randomName) => {
       return getDownloadURL(snapshot.ref)
     })
   }
-export const addProducto = (t, d, p, c, i) =>
+   export const addProducto = (t, d, p, c, i) =>
     addDoc(collection(db, "productos"), {
       titulo: t,
       descripcion: d,
